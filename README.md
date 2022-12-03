@@ -9,7 +9,7 @@ Sends a pulse over DMX512 on ESP32 using ESP-IDF.
 * ESP32 UART https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/uart.html
 
 # Inspiration
-DMX parsing inspired by https://github.com/luksal/ESP32-DMX
+DMX sending inspired by https://github.com/Hardi-St/MobaLedLib/blob/master/src/DMXInterface.cpp
 
 # Setup
 * Configure esp-idf environment (ESP-IDF v5.0-dev-4001-g495d35949d 2nd stage bootloader)

@@ -34,7 +34,7 @@ const char nullChar = 0;
 void dmxtask(void *pvParameters) {
 	ESP_LOGI(TAG, "Start");
 
-	// DMX inspired by https://github.com/luksal/ESP32-DMX
+	// DMX inspired by https://github.com/Hardi-St/MobaLedLib/blob/master/src/DMXInterface.cpp
 	// Setup UART for DMX512
 	uart_config_t uart_config = {
 		.baud_rate = 250000,
