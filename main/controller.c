@@ -16,7 +16,6 @@
 
 /*
 Fixture Eurolite LED PARty RGBW Spot
-*/
 #define Channel_Red 1
 #define Channel_Green 2
 #define Channel_Blue 3
@@ -24,9 +23,11 @@ Fixture Eurolite LED PARty RGBW Spot
 #define Channel_Dimmer 5
 #define Channel_Amber 7
 #define Channel_UV 8
+*/
 
 /*
 Fixture Cameo Flat Pro Flood 600 IP65 CLFLOOD600IP65
+*/
 #define Channel_Dimmer 1
 #define Channel_Strobe 2
 #define Channel_Duration 3
@@ -36,7 +37,6 @@ Fixture Cameo Flat Pro Flood 600 IP65 CLFLOOD600IP65
 #define Channel_White 7
 #define Channel_Amber 8
 #define Channel_UV 9
-*/
 
 #define min(x, y) (((x) < (y)) ? (x) : (y))
 #define max(a,b) \
@@ -68,19 +68,19 @@ void controllertask(void *pvParameters) {
 	ESP_LOGI(TAG, "Start");
 	setChannels(Channel_Red, 255);
 
-	float color_Red = 1.0;
+	float color_Red = 0.0;
 	float color_Green = 0.1;
 	float color_Blue = 0.0;
-	float color_White = 0.0;
-	float color_Amber = 0.0;
-	float color_UV = 0.0;
+	float color_White = 0.7;
+	float color_Amber = 0.3;
+	float color_UV = 0.6;
 
-	float level_dim_min = 0.05;
+	float level_dim_min = 0.20;
 	float level_dim_max = 1.00;
 	float level_color_min = 0.5;
 	float level_color_max = 1.0;
 
-	uint32_t time_common = 2000;
+	uint32_t time_common = 12000;
 	wave_t waves[] = {
 		{ .seconds = time_common, .max = 0.50 },
 		{ .seconds = time_common, .max = 0.75 },
