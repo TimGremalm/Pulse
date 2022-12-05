@@ -68,14 +68,14 @@ void controllertask(void *pvParameters) {
 	ESP_LOGI(TAG, "Start");
 	setChannels(Channel_Red, 255);
 
-	float color_Red = 0.0;
-	float color_Green = 0.1;
-	float color_Blue = 0.0;
-	float color_White = 0.7;
-	float color_Amber = 0.3;
-	float color_UV = 0.6;
+	float color_Red = 0.00;
+	float color_Green = 0.32;
+	float color_Blue = 0.32;
+	float color_White = 0.72;
+	float color_Amber = 0.32;
+	float color_UV = 0.64;
 
-	float level_dim_min = 0.20;
+	float level_dim_min = 0.30;
 	float level_dim_max = 1.00;
 	float level_color_min = 0.5;
 	float level_color_max = 1.0;
